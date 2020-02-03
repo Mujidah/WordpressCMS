@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [WordpressSuite]">
+  <test thread-count="5" verbose="0" name="Wordpress(failed)">
+    <classes>
+      <class name="tests.createPostTests">
+        <methods>
+          <include name="testSaveDraft"/>
+          <include name="testPublishPost"/>
+          <include name="logout"/>
+          <include name="testPreviewPost"/>
+          <include name="setup"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- tests.createPostTests -->
+    </classes>
+  </test> <!-- Wordpress(failed) -->
+</suite> <!-- Failed suite [WordpressSuite] -->

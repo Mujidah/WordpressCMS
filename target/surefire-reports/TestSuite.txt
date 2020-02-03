@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 159.583 s <<< FAILURE! - in TestSuite
+tests.createPostTests.testSaveDraft  Time elapsed: 94.973 s  <<< FAILURE!
+org.openqa.selenium.NoSuchFrameException: 
+No frame element found by name or id Fancybox-frame
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at tests.createPostTests.testSaveDraft(createPostTests.java:28)
+
+tests.createPostTests.logout  Time elapsed: 141.162 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
+*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}
+	at tests.createPostTests.logout(createPostTests.java:69)
+
