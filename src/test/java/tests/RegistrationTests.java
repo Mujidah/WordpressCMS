@@ -1,7 +1,6 @@
 package tests;
 
 import base.baseTests;
-import ReusableMethods.LoginSuccessfully;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.RegistrationPage;
