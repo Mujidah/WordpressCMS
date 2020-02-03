@@ -2,15 +2,12 @@ package tests;
 
 import base.baseTests;
 import ReusableMethods.LoginSuccessfully;
+import ReusableMethods.LogoutSuccessfully;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import pages.CreatePostPage;
-import pages.EmployeesPage;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProfilePage;
 import pages.ReadPage;
 
 import java.io.IOException;
@@ -40,6 +37,7 @@ public class createPostTests extends baseTests{
         ReadPage readPage = new ReadPage(driver);
         readPage.clickNewPost();
         CreatePostPage createPost = new CreatePostPage(driver);
+        createPost.waitUntilAlertIsPresent();
         createPost.verifyTitleIsPresent();
         createPost.enterTitle("This is a new post");
         createPost.enterBody("This is the content of the post. Not long but let's manage it.");
@@ -55,6 +53,7 @@ public class createPostTests extends baseTests{
         ReadPage readPage = new ReadPage(driver);
         readPage.clickNewPost();
         CreatePostPage createPost = new CreatePostPage(driver);
+        createPost.waitUntilAlertIsPresent();
         createPost.verifyTitleIsPresent();
         createPost.enterTitle("This is a new post");
         createPost.enterBody("This is the content of the post. Not long but let's manage it.");
@@ -64,9 +63,7 @@ public class createPostTests extends baseTests{
     
     @AfterMethod
     public void logout() throws IOException {
-        navigateToHome();
-        ProfilePage profilePage = new ProfilePage(driver);
-        profilePage.verifyLogoutButtonIsDisplayed();
-        profilePage.clickLogoutButton();
+        LogoutSuccessfully logoutSuccessfully = new LogoutSuccessfully(driver);
+        logoutSuccessfully.logout();
     }
 }

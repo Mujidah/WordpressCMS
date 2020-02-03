@@ -3,7 +3,6 @@ package tests;
 import base.baseTests;
 import ReusableMethods.LoginSuccessfully;
 import org.testng.annotations.Test;
-import pages.EmployeesPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ReadPage;

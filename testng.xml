@@ -3,8 +3,9 @@
 <suite name="WordpressSuite">
   <test thread-count="5" name="Wordpress">
     <classes>
-    <!--  <class name="tests.loginTests"/> -->
+      <class name="tests.loginTests"/>
       <class name="tests.createPostTests"/>
+      <class name="tests.RegistrationTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,32 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="2" failed="1" ignored="0" total="9" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="WordpressSuite" duration-ms="156786" started-at="2020-02-02T19:56:44 WAT" finished-at="2020-02-02T19:59:21 WAT">
+  <suite name="WordpressSuite" duration-ms="218335" started-at="2020-02-03T16:18:46 WAT" finished-at="2020-02-03T16:22:25 WAT">
     <groups>
     </groups>
-    <test name="Wordpress" duration-ms="156786" started-at="2020-02-02T19:56:44 WAT" finished-at="2020-02-02T19:59:21 WAT">
-      <class name="tests.createPostTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.createPostTests@3c0ecd4b]" name="setup" is-config="true" duration-ms="15343" started-at="2020-02-02T19:56:44 WAT" finished-at="2020-02-02T19:57:00 WAT">
+    <test name="Wordpress" duration-ms="218335" started-at="2020-02-03T16:18:46 WAT" finished-at="2020-02-03T16:22:25 WAT">
+      <class name="tests.RegistrationTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.RegistrationTests@42dafa95]" name="setup" is-config="true" duration-ms="11473" started-at="2020-02-03T16:21:25 WAT" finished-at="2020-02-03T16:21:36 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="testSaveDraft()[pri:1, instance:tests.createPostTests@3c0ecd4b]" name="testSaveDraft" duration-ms="94953" started-at="2020-02-02T19:57:00 WAT" finished-at="2020-02-02T19:58:35 WAT">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
+        <test-method status="PASS" signature="testRegisterWithExistingEmail()[pri:1, instance:tests.RegistrationTests@42dafa95]" name="testRegisterWithExistingEmail" duration-ms="17967" started-at="2020-02-03T16:21:36 WAT" finished-at="2020-02-03T16:21:54 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithExistingEmail -->
+        <test-method status="PASS" signature="testRegisterWithExistingUsername()[pri:2, instance:tests.RegistrationTests@42dafa95]" name="testRegisterWithExistingUsername" duration-ms="8974" started-at="2020-02-03T16:21:54 WAT" finished-at="2020-02-03T16:22:03 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithExistingUsername -->
+        <test-method status="PASS" signature="testRegisterSuccessfully()[pri:3, instance:tests.RegistrationTests@42dafa95]" name="testRegisterSuccessfully" duration-ms="19807" started-at="2020-02-03T16:22:03 WAT" finished-at="2020-02-03T16:22:23 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterSuccessfully -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:tests.RegistrationTests@42dafa95]" name="shutDown" is-config="true" duration-ms="1670" started-at="2020-02-03T16:22:23 WAT" finished-at="2020-02-03T16:22:25 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- tests.RegistrationTests -->
+      <class name="tests.loginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.loginTests@271053e1]" name="setup" is-config="true" duration-ms="11985" started-at="2020-02-03T16:18:47 WAT" finished-at="2020-02-03T16:18:59 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLoginWithInvalidUsername()[pri:1, instance:tests.loginTests@271053e1]" name="testLoginWithInvalidUsername" duration-ms="15184" started-at="2020-02-03T16:18:59 WAT" finished-at="2020-02-03T16:19:14 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidUsername -->
+        <test-method status="PASS" signature="testLoginWithInvalidPassword()[pri:2, instance:tests.loginTests@271053e1]" name="testLoginWithInvalidPassword" duration-ms="8075" started-at="2020-02-03T16:19:14 WAT" finished-at="2020-02-03T16:19:22 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidPassword -->
+        <test-method status="PASS" signature="testLoginSuccessfully()[pri:3, instance:tests.loginTests@271053e1]" name="testLoginSuccessfully" duration-ms="17192" started-at="2020-02-03T16:19:22 WAT" finished-at="2020-02-03T16:19:39 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccessfully -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:tests.loginTests@271053e1]" name="shutDown" is-config="true" duration-ms="1223" started-at="2020-02-03T16:19:39 WAT" finished-at="2020-02-03T16:19:40 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- tests.loginTests -->
+      <class name="tests.createPostTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.createPostTests@589838eb]" name="setup" is-config="true" duration-ms="10606" started-at="2020-02-03T16:19:40 WAT" finished-at="2020-02-03T16:19:51 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="testSaveDraft()[pri:1, instance:tests.createPostTests@589838eb]" name="testSaveDraft" duration-ms="63965" started-at="2020-02-03T16:19:51 WAT" finished-at="2020-02-03T16:20:55 WAT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[No frame element found by name or id Fancybox-frame
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-title-0']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3
+*** Element info: {Using=xpath, value=//*[@id='post-title-0']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Fancybox-frame
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-title-0']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
-at pages.CreatePostPage.verifyTitleIsPresent(CreatePostPage.java:26)
-at tests.createPostTests.testSaveDraft(createPostTests.java:28)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3
+*** Element info: {Using=xpath, value=//*[@id='post-title-0']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.CreatePostPage.verifyTitleIsPresent(CreatePostPage.java:38)
+at tests.createPostTests.testSaveDraft(createPostTests.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,33 +128,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSaveDraft -->
-        <test-method status="FAIL" signature="logout()[pri:0, instance:tests.createPostTests@3c0ecd4b]" name="logout" is-config="true" duration-ms="46192" started-at="2020-02-02T19:58:35 WAT" finished-at="2020-02-02T19:59:21 WAT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="logout()[pri:0, instance:tests.createPostTests@589838eb]" name="logout" is-config="true" duration-ms="30078" started-at="2020-02-03T16:20:55 WAT" finished-at="2020-02-03T16:21:25 WAT">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,12 +161,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.ProfilePage.verifyLogoutButtonIsDisplayed(ProfilePage.java:18)
-at tests.createPostTests.logout(createPostTests.java:69)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.ReadPage.clickProfileImage(ReadPage.java:37)
+at ReusableMethods.LogoutSuccessfully.logout(LogoutSuccessfully.java:37)
+at tests.createPostTests.logout(createPostTests.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,33 +205,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="SKIP" signature="testPreviewPost()[pri:2, instance:tests.createPostTests@3c0ecd4b]" name="testPreviewPost" duration-ms="0" started-at="2020-02-02T19:59:21 WAT" finished-at="2020-02-02T19:59:21 WAT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="testPreviewPost()[pri:2, instance:tests.createPostTests@589838eb]" name="testPreviewPost" duration-ms="0" started-at="2020-02-03T16:21:25 WAT" finished-at="2020-02-03T16:21:25 WAT">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -180,12 +238,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.ProfilePage.verifyLogoutButtonIsDisplayed(ProfilePage.java:18)
-at tests.createPostTests.logout(createPostTests.java:69)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.ReadPage.clickProfileImage(ReadPage.java:37)
+at ReusableMethods.LogoutSuccessfully.logout(LogoutSuccessfully.java:37)
+at tests.createPostTests.logout(createPostTests.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,33 +282,33 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPreviewPost -->
-        <test-method status="SKIP" signature="testPublishPost()[pri:3, instance:tests.createPostTests@3c0ecd4b]" name="testPublishPost" duration-ms="0" started-at="2020-02-02T19:59:21 WAT" finished-at="2020-02-02T19:59:21 WAT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="logout()[pri:0, instance:tests.createPostTests@589838eb]" name="logout" is-config="true" duration-ms="-1580743285419" started-at="2020-02-03T16:21:25 WAT" finished-at="1970-01-01T01:00:00 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="testPublishPost()[pri:3, instance:tests.createPostTests@589838eb]" name="testPublishPost" duration-ms="0" started-at="2020-02-03T16:21:25 WAT" finished-at="2020-02-03T16:21:25 WAT">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='secondary']/div/div/div[2]/button"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ISW-GSTQA-MA', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 111ece9c7c2e580c6717e0d4b6b7de97
-*** Element info: {Using=xpath, value=//*[@id='secondary']/div/div/div[2]/button}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MUJIDA~1.ALA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1dd723153ddca62a5f4ed3394c296d3
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -262,12 +319,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.ProfilePage.verifyLogoutButtonIsDisplayed(ProfilePage.java:18)
-at tests.createPostTests.logout(createPostTests.java:69)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.ReadPage.clickProfileImage(ReadPage.java:37)
+at ReusableMethods.LogoutSuccessfully.logout(LogoutSuccessfully.java:37)
+at tests.createPostTests.logout(createPostTests.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -307,22 +363,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPublishPost -->
-        <test-method status="SKIP" signature="logout()[pri:0, instance:tests.createPostTests@3c0ecd4b]" name="logout" is-config="true" duration-ms="-1580669961292" started-at="2020-02-02T19:59:21 WAT" finished-at="1970-01-01T01:00:00 WAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="SKIP" signature="logout()[pri:0, instance:tests.createPostTests@3c0ecd4b]" name="logout" is-config="true" duration-ms="-1580669961293" started-at="2020-02-02T19:59:21 WAT" finished-at="1970-01-01T01:00:00 WAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="SKIP" signature="shutDown()[pri:0, instance:tests.createPostTests@3c0ecd4b]" name="shutDown" is-config="true" duration-ms="-1580669961294" started-at="2020-02-02T19:59:21 WAT" finished-at="1970-01-01T01:00:00 WAT">
+        <test-method status="SKIP" signature="shutDown()[pri:0, instance:tests.createPostTests@589838eb]" name="shutDown" is-config="true" duration-ms="-1580743285420" started-at="2020-02-03T16:21:25 WAT" finished-at="1970-01-01T01:00:00 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
+        <test-method status="SKIP" signature="logout()[pri:0, instance:tests.createPostTests@589838eb]" name="logout" is-config="true" duration-ms="-1580743285420" started-at="2020-02-03T16:21:25 WAT" finished-at="1970-01-01T01:00:00 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
       </class> <!-- tests.createPostTests -->
     </test> <!-- Wordpress -->
   </suite> <!-- WordpressSuite -->
