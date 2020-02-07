@@ -3,6 +3,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
 import java.io.FileInputStream;
@@ -22,11 +23,14 @@ public class baseTests {
 
         String browserName = properties.getProperty("browser");
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
             this.driver = new ChromeDriver();
         } else if (browserName.equals("firefox")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver");
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver.exe");
             this.driver = new FirefoxDriver();
+        } else if (browserName.equals("IE")) {
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/drivers/IEDriverServer.exe");
+            this.driver = new InternetExplorerDriver();
         }
 
         System.out.println("Browser initialized successfully");

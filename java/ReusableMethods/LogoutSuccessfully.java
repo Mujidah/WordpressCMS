@@ -6,14 +6,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ProfilePage;
 import pages.ReadPage;
 
 import java.io.IOException;
 
-public class LoginSuccessfully {
+public class LogoutSuccessfully {
     private WebDriver driver;
 
-    public LoginSuccessfully(WebDriver driver){
+    public LogoutSuccessfully(WebDriver driver){
         this.driver = driver;
     }
 
@@ -29,5 +30,13 @@ public class LoginSuccessfully {
         ReadPage readPage = new ReadPage(driver);
         readPage.verifyProfileImageIsPresent();
 
+    }
+    
+    public void logout() {
+        ReadPage readPage = new ReadPage(driver);
+        readPage.clickProfileImage();
+        ProfilePage profilePage = new ProfilePage(driver);
+        profilePage.verifyLogoutButtonIsDisplayed();
+        profilePage.clickLogoutButton();
     }
 }
