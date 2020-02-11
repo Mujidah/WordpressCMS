@@ -13,6 +13,13 @@
           <include name="shutDown"/>
         </methods>
       </class> <!-- tests.createPostTests -->
+      <class name="tests.loginTests">
+        <methods>
+          <include name="testLoginSuccessfully"/>
+          <include name="setup"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- tests.loginTests -->
     </classes>
   </test> <!-- Wordpress(failed) -->
 </suite> <!-- Failed suite [WordpressSuite] -->

@@ -22,6 +22,7 @@ public class createPostTests extends baseTests{
         ReadPage readPage = new ReadPage(driver);
         readPage.clickNewPost();
         CreatePostPage createPost = new CreatePostPage(driver);
+        createPost.verifyModalIsPresent();
         createPost.verifyTitleIsPresent();
         createPost.enterTitle("This is a new post");
         createPost.enterBody("This is the content of the post. Not long but let's manage it.");

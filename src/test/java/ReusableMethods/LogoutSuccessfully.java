@@ -1,15 +1,10 @@
 package ReusableMethods;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ProfilePage;
 import pages.ReadPage;
-
-import java.io.IOException;
 
 public class LogoutSuccessfully {
     private WebDriver driver;

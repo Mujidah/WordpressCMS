@@ -20,6 +20,7 @@ public class CreatePostPage {
     By draft = By.xpath("//*[@id=\'editor\']/div/div/div[1]/div/div[1]/div/div[1]/button[1]");
     By draftSaved = By.xpath("//*[@id=\'editor\']/div/div/div[1]/div/div[1]/div/div[1]/span");
     By dialog = By.xpath("/html/body/div[7]/div/div/div/div/div/div/div/div[1]/button/svg/path");
+    By modal = By.cssSelector("iframe[class='is-iframe-loaded']");
 
     public void waitUntilAlertIsPresent(){
         WebDriverWait wait = new WebDriverWait(driver, 60);
@@ -28,12 +29,22 @@ public class CreatePostPage {
         System.out.println("Alert is clicked on");
     }
     
+    public void verifyModalIsPresent(){
+
+        WebDriverWait wait = new WebDriverWait(driver, 60);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(modal));
+        driver.findElement(modal).isDisplayed();
+    	driver.switchTo().frame(driver.findElement(modal));
+        driver.findElement(modal).click();
+        System.out.println("Frame switched successfully and clicked");
+    }
+    
     public void verifyTitleIsPresent(){
-    	driver.switchTo().activeElement();
+    	/* driver.switchTo().activeElement();
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(dialog));
         driver.findElement(dialog).isDisplayed();
-        driver.findElement(dialog).click();
+        driver.findElement(dialog).click(); */
         driver.switchTo().defaultContent(); 
         driver.findElement(title).isDisplayed();
         System.out.println("Title box is present");

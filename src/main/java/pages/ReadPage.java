@@ -14,6 +14,7 @@ public class ReadPage {
 
     By profileImage = By.xpath("//*[@id=\'header\']/a[3]/span/img");
     By newPost = By.xpath("//*[@id=\'header\']/div[1]/a/span");
+    By site = By.xpath("//*[@id=\'header\']/a[1]/span");
 
 
     public void verifyProfileImageIsPresent(){
@@ -37,4 +38,10 @@ public class ReadPage {
         driver.findElement(profileImage).click();
         System.out.println("Profile is clicked");
     }
+    
+    public void clickMySite(){
+        driver.findElement(site).click();
+        System.out.println("My site is clicked");
+    }
+
 }
