@@ -40,12 +40,15 @@ public class createPageTests extends baseTests{
         LoginSuccessfully loginSuccessfully = new LoginSuccessfully(driver);
         loginSuccessfully.login();
         ReadPage readPage = new ReadPage(driver);
-        readPage.clickNewPost();
+        readPage.clickMySite();
+        SitePage sitePage = new SitePage(driver);
+        sitePage.clickPages();
+        sitePage.addNewPage();
+        sitePage.clickAboutLayout();
+        sitePage.useLayoutSelected();
         CreatePostPage createPost = new CreatePostPage(driver);
-        createPost.waitUntilAlertIsPresent();
         createPost.verifyTitleIsPresent();
-        createPost.enterTitle("This is a new post");
-        createPost.enterBody("This is the content of the post. Not long but let's manage it.");
+        createPost.enterTitle("This is a new page");
         createPost.previewPost();
         createPost.verifyPreviewPageisDisplayed();
     }
@@ -56,12 +59,15 @@ public class createPageTests extends baseTests{
         LoginSuccessfully loginSuccessfully = new LoginSuccessfully(driver);
         loginSuccessfully.login();
         ReadPage readPage = new ReadPage(driver);
-        readPage.clickNewPost();
+        readPage.clickMySite();
+        SitePage sitePage = new SitePage(driver);
+        sitePage.clickPages();
+        sitePage.addNewPage();
+        sitePage.clickAboutLayout();
+        sitePage.useLayoutSelected();
         CreatePostPage createPost = new CreatePostPage(driver);
-        createPost.waitUntilAlertIsPresent();
         createPost.verifyTitleIsPresent();
         createPost.enterTitle("This is a new post");
-        createPost.enterBody("This is the content of the post. Not long but let's manage it.");
         createPost.publishPost();
         createPost.verifyPostisPublished();
     }
